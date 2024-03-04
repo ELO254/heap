@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_product_listing.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/travel"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:text="TRAVEL LOG"
+        android:textSize="32dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="381dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:hint=""
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="381dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/edit_text_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:hint=""
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="174dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/edit_text_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Submit"
+        android:theme="@style/Button.White"
+        app:rippleColor="#FFEB3B" />
+
+</RelativeLayout>
